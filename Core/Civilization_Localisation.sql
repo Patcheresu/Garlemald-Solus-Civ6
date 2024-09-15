@@ -47,11 +47,11 @@ VALUES
 
 	('en_US',	'LOC_IMPROVEMENT_GARLEMALD_CERULEUM_WELL_NAME',				'Ceruleum Well'								),
 	('en_US',	'LOC_IMPROVEMENT_GARLEMALD_CERULEUM_WELL_DESCRIPTION',
-	'Unlocks the Builder ability to construct Ceruleum Wells and Rigs, which can work Oil with Ancient Era technology. +1 Appeal, +2 [ICON_Science] Science, +2 [ICON_Food] Food. Can only be built on tiles with [ICON_RESOURCE_OIL] Oil.' 	),
+	'Unlocks the Builder ability to construct Ceruleum Wells, which can work Oil with Ancient Era technology. +1 Appeal, +2 [ICON_Food] Food. +2 [ICON_Production] Production. Can only be built on tiles with [ICON_RESOURCE_OIL] Oil. Having at least 1 Ceruleum Well or Rig in a city provides +1 [Icon_GreatEngineer] Great Engineer Points.' 	),
 
 	('en_US',	'LOC_IMPROVEMENT_GARLEMALD_CERULEUM_RIG_NAME',				'Ceruleum Rig'								),
 	('en_US',	'LOC_IMPROVEMENT_GARLEMALD_CERULEUM_RIG_DESCRIPTION',
-	'Unlocks the Builder ability to construct Ceruleum Wells and Rigs, which can work Oil with Ancient Era technology. +1 Appeal, +2 [ICON_Science] Science, +2 [ICON_Food] Food. Can only be built on tiles with [ICON_RESOURCE_OIL] Oil.' 	),
+	'Unlocks the Builder ability to construct Ceruleum Rigs, which can work Oil with Ancient Era technology. +1 Appeal, +2 [ICON_Food] Food. +2 [ICON_Production] Production. Can only be built on tiles with [ICON_RESOURCE_OIL] Oil. Having at least 1 Ceruleum Well or Rig in a city provides +1 [Icon_GreatEngineer] Great Engineer Points.' 	),
 
 
 -----------------------------------------------
@@ -66,9 +66,7 @@ VALUES
 
 	('en_US',	'LOC_UNIT_PATCHERESU_GUNSHIP_NAME',	'Gunship'	),
 	('en_US',	'LOC_UNIT_PATCHERESU_GUNSHIP_DESCRIPTION',	 
-	'The premiere flight units of the Garlean military, these fearsome, flying magitek death machines replace the Biplane, hit as hard as an Aluminum Fighter, and receive a [ICON_Strength] Combat Strength boost during [ICON_Glory_Golden_Age] Golden Ages.'	),
-
-	('en_US',	'LOC_ABILITY_PATCHERESU_GUNSHIP',  '+5 [ICON_Strength] Combat Strength during a [ICON_Glory_Golden_Age] Golden Age.'	),
+	'The premiere flight units of the Garlean military, these fearsome, flying magitek death machines replace the Biplane and is as capable as an Aluminum Fighter.'	),
 
 -----------------------------------------------
 -- Mountains

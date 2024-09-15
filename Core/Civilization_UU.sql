@@ -44,8 +44,7 @@ VALUES	('CLASS_PATCHERESU_GUNSHIP',		'ABILITY_CLASS'	);
 
 INSERT INTO TypeTags
 		(Type,						Tag						)
-VALUES	('UNIT_PATCHERESU_GUNSHIP',		'CLASS_PATCHERESU_GUNSHIP'	),
-		('ABILITY_PATCHERESU_GUNSHIP',	'CLASS_PATCHERESU_GUNSHIP'	);
+VALUES	('UNIT_PATCHERESU_GUNSHIP',		'CLASS_PATCHERESU_GUNSHIP'	);
 
 INSERT INTO TypeTags (Type,		Tag)
 SELECT 	'UNIT_PATCHERESU_GUNSHIP',	Tag
@@ -185,10 +184,6 @@ VALUES	('UNIT_PATCHERESU_GUNSHIP',	'UNIT_BIPLANE'		);
 -- It is worth noting that applying an ability to the unit is optional - it's an extra layer on top of any 'standard' variables that are common to all units. This particular ability enables this template to showcase the way that a Modifier can be used to change the effectiveness of our custom unit in certain situations. These kind of unit abilities are granted to units by class in the base-game on many occasions - for example, granting Anti-Cavalry units a bonus versus Cavalry units. The logic is identical.
 -----------------------------------------------
 
-INSERT INTO UnitAbilities
-		(UnitAbilityType,			Name,								Description						)
-VALUES	('ABILITY_PATCHERESU_GUNSHIP',	'LOC_UNIT_PATCHERESU_GUNSHIP_NAME',		'LOC_ABILITY_PATCHERESU_GUNSHIP'		);
-
 -----------------------------------------------
 -- Modifiers
 
@@ -200,10 +195,6 @@ VALUES	('ABILITY_PATCHERESU_GUNSHIP',	'LOC_UNIT_PATCHERESU_GUNSHIP_NAME',		'LOC_
 
 -- Compatibility note: Golden Ages were introduced in Rise & Fall. This particular unit ability requires that expansion to function. Specifically, the requirement creates the dependency on the expansion.
 -----------------------------------------------
-	
-INSERT INTO Modifiers	
-		(ModifierId,									ModifierType,									OwnerRequirementSetId		)
-VALUES	('MODIFIER_GUNSHIP_GOLDEN_AGE_STRENGTH',		'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH',			'PLAYER_HAS_GOLDEN_AGE'		);
 
 -----------------------------------------------
 -- ModifierArguments
@@ -217,10 +208,6 @@ VALUES	('MODIFIER_GUNSHIP_GOLDEN_AGE_STRENGTH',		'MODIFIER_UNIT_ADJUST_COMBAT_ST
 -- This is what makes the ModifierType so important - this is one of the key parts of the game where the entries you configure are not all explicitly listed. In isolation, the below ModifierArgument could mean (or apply to) a number of things. However, the context of the ModifierType dictates that this Amount is, in fact, a Combat Strength increase.
 -----------------------------------------------
 
-INSERT INTO ModifierArguments		
-		(ModifierId,										Name,						Value	)
-VALUES	('MODIFIER_GUNSHIP_GOLDEN_AGE_STRENGTH',			'Amount',					5		);
-
 -----------------------------------------------
 -- UnitAbilityModifiers
 
@@ -231,10 +218,6 @@ VALUES	('MODIFIER_GUNSHIP_GOLDEN_AGE_STRENGTH',			'Amount',					5		);
 -- We specified the CLASS_PATCHERESU_GUNSHIP as being the only one linked to the ABILITY_PATCHERESU_GUNSHIP earlier in this document (using the TypeTags table). This way, we ensure that the only unit to get this ability is, in fact, the Werejaguar.
 -----------------------------------------------
 
-INSERT INTO UnitAbilityModifiers
-		(UnitAbilityType,				ModifierId									)
-VALUES	('ABILITY_PATCHERESU_GUNSHIP',		'MODIFIER_GUNSHIP_GOLDEN_AGE_STRENGTH'	);
-
 -----------------------------------------------
 -- ModifierStrings
 
@@ -244,7 +227,3 @@ VALUES	('ABILITY_PATCHERESU_GUNSHIP',		'MODIFIER_GUNSHIP_GOLDEN_AGE_STRENGTH'	);
 
 -- We tie this to the Modifier, as the ability is triggered based on certain criteria being met. This is essentially what makes it an 'ability' rather than a staple part of that unit. Other ModifierStrings can be cross-referenced from UnitAbilities.xml.
 -----------------------------------------------
-
-INSERT INTO ModifierStrings
-		(ModifierId,									Context,		Text							)
-VALUES	('MODIFIER_GUNSHIP_GOLDEN_AGE_STRENGTH',		'Preview',		'LOC_ABILITY_PATCHERESU_GUNSHIP'		);
