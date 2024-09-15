@@ -80,12 +80,9 @@ INSERT OR REPLACE INTO Improvements
     Name,
     Description,
     Icon,
-    Buildable,
-    Sameadjacentvalid,
+    EnforceTerrain,
     Traittype,
     Prereqtech,
-    Enforceterrain,
-    Domain,
     Plundertype,
     Plunderamount,
     Housing,
@@ -99,11 +96,8 @@ VALUES
     'LOC_IMPROVEMENT_GARLEMALD_CERULEUM_WELL_DESCRIPTION',
     'ICON_IMPROVEMENT_OIL_WELL',
     1,
-    0,
     'TRAIT_CIVILIZATION_IMPROVEMENT_GARLEMALD_CERULEUM_WELL',
     'TECH_MINING',
-    1,
-    'DOMAIN_LAND',
     'PLUNDER_SCIENCE',
     50,
     1,
@@ -114,13 +108,10 @@ VALUES
     'IMPROVEMENT_CERULEUM_RIG',
     'LOC_IMPROVEMENT_GARLEMALD_CERULEUM_RIG_NAME',
     'LOC_IMPROVEMENT_GARLEMALD_CERULEUM_RIG_DESCRIPTION',
-    'ICON_IMPROVEMENT_OIL_RIG',
+    'ICON_IMPROVEMENT_OFFSHORE_OIL_RIG',
     1,
-    0,
     'TRAIT_CIVILIZATION_IMPROVEMENT_GARLEMALD_CERULEUM_RIG',
     'TECH_SAILING',
-    1,
-    'DOMAIN_SEA',
     'PLUNDER_SCIENCE',
     50,
     1,
@@ -217,7 +208,7 @@ VALUES (
 );
 
 -----------------------------------------------------------------------------------
--- BImprovement_BonusYieldChanges
+-- Improvement_BonusYieldChanges
 
 -- Do later techs make your yields better?
 -----------------------------------------------------------------------------------	
@@ -264,7 +255,7 @@ VALUES (
 -- TilesRequired is an integer that defines how many adjacent tiles of the defined type are required to trigger the YieldChange. For Districts, this must always be one.
 -- AdjacentDistrict defines which type of District the game requires to be adjacent to the Improvement. This column can be replaced with a number of alternatives, for different effects: AdjacentFeature (string), AdjacentTerrain (string), AdjacentNaturalWonder (boolean), AdjacentSeaResource (boolean).
 
-/* INSERT INTO Improvement_Adjacencies	
+/* INSERT INTO Improvement_Adjacencies
 		(ImprovementType,				YieldChangeId)
 VALUES	('IMPROVEMENT_CERULEUM_WELL',	'GARLEMALD_CERULEUM_WELL_HOLY_SITE'		),
 		('IMPROVEMENT_CERULEUM_WELL',	'GARLEMALD_CERULEUM_WELL_CAMPUS'		);
@@ -295,7 +286,7 @@ VALUES	('GARLEMALD_CERULEUM_WELL_HOLY_SITE',	'Placeholder',	'YIELD_SCIENCE',	1,	
 
 -- Learning point: The starting point to search in the base game XML is to look-up an existing CivilizationType (e.g. CIVILIZATION_FRANCE) and note their TRAIT_CIVILIZATION_ that is neither the Unique Ability nor the Unique Unit. In France's case, it is TRAIT_CIVILIZATION_IMPROVEMENT_CHATEAU. Searching that will lead you to the ModifierId entry (or entries) that grant the various bonuses associated with that TraitType. You can apply this simple principle in order to look-up how the code is constructed, in every situation.
 
-/*INSERT INTO TraitModifiers			
+/*INSERT INTO TraitModifiers
 		(TraitType,													ModifierId								)
 VALUES	('TRAIT_CIVILIZATION_IMPROVEMENT_GARLEMALD_CERULEUM_WELL', 		'GARLEMALD_CERULEUM_WELL_GREAT_ARTIST'		);*/
 -------------------------------------
@@ -321,7 +312,7 @@ VALUES	('TRAIT_CIVILIZATION_IMPROVEMENT_GARLEMALD_CERULEUM_WELL', 		'GARLEMALD_C
 -- You may also note that we are creating two Modifiers, here, despite only linking one to our trait. In this example, the second modifier is referenced by the first one (which has the MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER ModifierType). I'll detail how this works in the next code section.
 
 /*
-INSERT INTO Modifiers	
+INSERT INTO Modifiers
 		(ModifierId,										ModifierType,											SubjectRequirementSetId		)
 VALUES	('GARLEMALD_CERULEUM_WELL_GREAT_ARTIST',				'MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER',				'GARLEMALD_4_CERULEUM_WELL'		),
 		('GARLEMALD_CERULEUM_WELL_GREAT_ARTIST_POINT',			'MODIFIER_PLAYER_ADJUST_GREAT_PERSON_POINTS',			null						);
@@ -372,7 +363,7 @@ VALUES	('GARLEMALD_CERULEUM_WELL_GREAT_ARTIST',				'ModifierId',				'GARLEMALD_C
 /*INSERT INTO RequirementSets
 		(RequirementSetId,						RequirementSetType				)
 VALUES	('GARLEMALD_4_CERULEUM_WELL',				'REQUIREMENTSET_TEST_ALL'		),
-		('PLOT_HAS_GARLEMALD_CERULEUM_WELL',		'REQUIREMENTSET_TEST_ALL'		);*/ 
+		('PLOT_HAS_GARLEMALD_CERULEUM_WELL',		'REQUIREMENTSET_TEST_ALL'		);*/
 -------------------------------------
 
 
