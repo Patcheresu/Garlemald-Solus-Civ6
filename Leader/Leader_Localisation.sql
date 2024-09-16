@@ -5,10 +5,6 @@
 
 -----------------------------------------------
 -- General notes on 'localization' (or 'in-game text')
-
--- The entries in this file, as well as those in Civilization_Localisation.sql, are where we define the text that will actually display, in-game. Fundamentally, certain unique code strings have associated 'localisation' strings. In this file, we specify the exact string of characters that will display in place of the unique code string.
-
--- In all cases, localisation strings always start with LOC_ - such that we can easily tell them apart from game code.
 -----------------------------------------------
 
 INSERT INTO LOCALIZEDTEXT
@@ -53,29 +49,82 @@ VALUES
 (
     'en_US',
     'LOC_PATCHERESU_MAGITEK_ACADEMY_LIBRARY_SCIENCE',
-    '+2 [ICON_Science] Science after unlocking Astrology.'
+    '+{1_num} [ICON_Science] Science after unlocking Astrology.'
 ),
 (
     'en_US',
     'LOC_PATCHERESU_MAGITEK_ACADEMY_UNIVERSITY_SCIENCE',
-    '+4 [ICON_Science] Science after unlocking Theology.'
+    '+{1_num} [ICON_Science] Science after unlocking Theology.'
 ),
 (
     'en_US',
-    'LOC_PATCHERESU_MAGITEK_ACADEMY_BUILDING_CONSTRUCTION',
-    '-50% [ICON_Production] Production to buildings inside this District.'
+    'LOC_DISTRICT_MAGITEK_ACADEMY_MOUNTAINS_SCIENCE1',
+    '+{1_num} [ICON_Science] Science from the adjacent Mountain {1_Num : plural 1?tile; other?tiles;}. .'
 ),
 (
     'en_US',
-    'LOC_PATCHERESU_MAGITEK_ACADEMY_GREAT_SCIENTIST_THEOLOGY',
-    '+1 [ICON_GreatScientist] Great Scientist Points after unlocking Theology.'
+    'LOC_DISTRICT_MAGITEK_ACADEMY_MOUNTAINS_SCIENCE2',
+    '+{1_num} [ICON_Science] Science from the adjacent Mountain {1_Num : plural 1?tile; other?tiles;}. .'
 ),
 (
     'en_US',
-    'LOC_PATCHERESU_MAGITEK_ACADEMY_GREAT_SCIENTIST_ASTROLOGY',
-    '+1 [ICON_GreatScientist] Great Scientist Points after unlocking Astrology.'
+    'LOC_DISTRICT_MAGITEK_ACADEMY_MOUNTAINS_SCIENCE3',
+    '+{1_num} [ICON_Science] Science from the adjacent Mountain {1_Num : plural 1?tile; other?tiles;}.'
 ),
-
+(
+    'en_US',
+    'LOC_DISTRICT_MAGITEK_ACADEMY_MOUNTAINS_SCIENCE4',
+    '+{1_num} [ICON_Science] Science from the adjacent Mountain {1_Num : plural 1?tile; other?tiles;}.'
+),
+(
+    'en_US',
+    'LOC_DISTRICT_MAGITEK_ACADEMY_MOUNTAINS_SCIENCE5',
+    '+{1_num} [ICON_Science] Science from the adjacent Mountain {1_Num : plural 1?tile; other?tiles;}.'
+),
+(
+    'en_US',
+    'LOC_DISTRICT_MAGITEK_ACADEMY_JUNGLE_SCIENCE',
+    '+{1_num} [ICON_Science] Science from the adjacent Rainforest tiles.'
+),
+(
+    'en_US',
+    'LOC_DISTRICT_MAGITEK_ACADEMY_DISTRICT_SCIENCE',
+    '+{1_num} [ICON_Science] Science from the adjacent District.'
+),
+(
+    'en_US',
+    'LOC_FEATURE_MAGITEK_ACADEMY_BARRIER_REEF_SCIENCE',
+    '+{1_num} [ICON_Science] Science from the adjacent natural wonder Great Barrier Reef.'
+),
+(
+    'en_US',
+    'LOC_DISTRICT_MAGITEK_ACADEMY_GOVERNMENT_SCIENCE',
+    '+{1_num} [ICON_Science] Science from the adjacent Government District.'
+),
+(
+    'en_US',
+    'LOC_DISTRICT_MAGITEK_ACADEMY_GEOTHERMAL_SCIENCE',
+    '+{1_num} [ICON_Science] Science from each adjacent Geothermal Fissure.'
+), (
+    'en_US',
+    'LOC_DISTRICT_MAGITEK_ACADEMY_REEF_SCIENCE',
+    '+{1_num} [ICON_Science] Science from the adjacent Reef.'
+),
+(
+    'en_US',
+    'LOC_DISTRICT_MAGITEK_ACADEMY_PAMUKKALE_SCIENCE',
+    '+{1_num} [ICON_Science] Science from the adjacent natural wonder Pamukkale.'
+),
+(
+    'en_US',
+    'LOC_DISTRICT_MAGITEK_ACADEMY_NATURALWONDER_SCIENCE',
+    '+{1_num} [ICON_Science] Science from the adjacent natural {1_Num : plural 1?wonder; other?wonders;}.'
+),
+(
+    'en_US',
+    'LOC_DISTRICT_MAGITEK_ACADEMY_FOREST_SCIENCE',
+    '+{1_num} [ICON_Science] Science from the adjacent Forest tiles.'
+),
 -----------------------------------------------
 -- Leader Agenda
 -----------------------------------------------	

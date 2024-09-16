@@ -5,14 +5,6 @@
 
 -----------------------------------------------
 -- Types
-
--- This inserts the Unique Ability reference into the primary Data Types table as a recognised trait. This is mandatory, if configuring a custom trait for your leader. The string listed under 'Type' must be used throughout the mod when referring to the TraitType.
-
--- The standard naming convention follows: TRAIT_LEADER_PREFIX_TRAITNAME
-
--- Configuring a Unique Ability for your custom leader is entirely optional, but it is typically considered appropriate for balance to configure one, such that your custom leader matches those from the base games in terms of complexity, both for flavour and gameplay balance.
-
--- In this example, we also define a new ability, which this particular Unique Ability will leverage. You'll note this is denoted under KIND_ABILITY, which ensures the game is acknowledging this item in the right way.
 -----------------------------------------------
 
 INSERT INTO Types
@@ -22,8 +14,6 @@ VALUES ('TRAIT_PATCHERESU_SOLUS_DISTRICT_MAGITEK_ACADEMY', 'KIND_TRAIT'),
 
 -----------------------------------------------
 -- Traits
-
--- With the TraitType defined (above), the below then inserts it into the overall Traits table. This allows it to exist in its own right, alongside other TraitType elements and ties it to the locally-referenced Name and Description text strings that name and describe the trait, respectively.
 -----------------------------------------------
 
 INSERT INTO Traits
@@ -36,8 +26,6 @@ VALUES (
 
 -----------------------------------------------
 -- LeaderTraits
-
--- This defines the leader to which the TraitType is applied (i.e. which leader gets the Unique Ability). This is a simple matter of referencing the custom LeaderType defined in Leader_Config.sql and using the TraitType defined at the head of this document.
 -----------------------------------------------
 
 INSERT INTO Leadertraits
@@ -83,7 +71,7 @@ VALUES (
     'PLUNDER_SCIENCE',
     50,
     'ADVISOR_TECHNOLOGY',
-    108,
+    120,
     'COST_PROGRESSION_NUM_UNDER_AVG_PLUS_TECH',
     40,
     2,
@@ -357,31 +345,6 @@ VALUES (
     'MODIFIER_PATCHERESU_MAGITEK_ACADEMY_UNIVERSITY_SCIENCE',
     'MODIFIER_BUILDING_YIELD_CHANGE',
     'REQSET_PATCHERESU_PLAYER_HAS_THEOLOGY'
-),
-(
-    'MODIFIER_PATCHERESU_MAGITEK_ACADEMY_BUILDING_CONSTRUCTION',
-    'MODIFIER_SINGLE_CITY_ADJUST_BUILDING_PRODUCTION',
-    NULL
-),
-(
-    'MODIFIER_PATCHERESU_ASTROLOGY_GREAT_SCIENTIST_POINT',
-    'MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER',
-    'REQSET_PATCHERESU_PLAYER_HAS_ASTROLOGY'
-),
-(
-    'MODIFIER_PATCHERESU_THEOLOGY_GREAT_SCIENTIST_POINT',
-    'MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER',
-    'REQSET_PATCHERESU_PLAYER_HAS_THEOLOGY'
-),
-(
-    'MODIFIER_PATCHERESU_MAGITEK_ACADEMY_GREAT_SCIENTIST_ASTROLOGY',
-    'MODIFIER_PLAYER_CITIES_ADJUST_GREAT_PERSON_POINT',
-    'BUILDING_IS_LIBRARY'
-),
-(
-    'MODIFIER_PATCHERESU_MAGITEK_ACADEMY_GREAT_SCIENTIST_THEOLOGY',
-    'MODIFIER_PLAYER_CITIES_ADJUST_GREAT_PERSON_POINT',
-    'BUILDING_IS_UNIVERSITY'
 );
 
 
@@ -401,24 +364,9 @@ INSERT INTO Buildingmodifiers
 (Buildingtype, Modifierid)
 */
 
-INSERT INTO Traitmodifiers
-(Traittype, Modifierid)
-VALUES (
-    'TRAIT_PATCHERESU_SOLUS_DISTRICT_MAGITEK_ACADEMY',
-    'MODIFIER_PATCHERESU_MAGITEK_ACADEMY_BUILDING_CONSTRUCTION'
-);
-
 INSERT INTO Districtmodifiers
 (Districttype, Modifierid)
 VALUES
-(
-    'DISTRICT_MAGITEK_ACADEMY',
-    'MODIFIER_PATCHERESU_ASTROLOGY_GREAT_SCIENTIST_POINT'
-),
-(
-    'DISTRICT_MAGITEK_ACADEMY',
-    'MODIFIER_PATCHERESU_THEOLOGY_GREAT_SCIENTIST_POINT'
-),
 (
     'DISTRICT_MAGITEK_ACADEMY',
     'MODIFIER_PATCHERESU_MAGITEK_ACADEMY_LIBRARY_SCIENCE'
@@ -475,46 +423,6 @@ VALUES (
     'MODIFIER_PATCHERESU_MAGITEK_ACADEMY_UNIVERSITY_SCIENCE',
     'Amount',
     4
-),
-(
-    'MODIFIER_PATCHERESU_MAGITEK_ACADEMY_BUILDING_CONSTRUCTION',
-    'DistrictType',
-    'DISTRICT_MAGITEK_ACADEMY'
-),
-(
-    'MODIFIER_PATCHERESU_MAGITEK_ACADEMY_BUILDING_CONSTRUCTION',
-    'Amount',
-    500
-),
-(
-    'MODIFIER_PATCHERESU_THEOLOGY_GREAT_SCIENTIST_POINT',
-    'ModifierId',
-    'MODIFIER_PATCHERESU_MAGITEK_ACADEMY_GREAT_SCIENTIST_THEOLOGY'
-),
-(
-    'MODIFIER_PATCHERESU_ASTROLOGY_GREAT_SCIENTIST_POINT',
-    'ModifierId',
-    'MODIFIER_PATCHERESU_MAGITEK_ACADEMY_GREAT_SCIENTIST_ASTROLOGY'
-),
-(
-    'MODIFIER_PATCHERESU_MAGITEK_ACADEMY_GREAT_SCIENTIST_THEOLOGY',
-    'GreatPersonClassType',
-    'GREAT_PERSON_CLASS_SCIENTIST'
-),
-(
-    'MODIFIER_PATCHERESU_MAGITEK_ACADEMY_GREAT_SCIENTIST_ASTROLOGY',
-    'GreatPersonClassType',
-    'GREAT_PERSON_CLASS_SCIENTIST'
-),
-(
-    'MODIFIER_PATCHERESU_MAGITEK_ACADEMY_GREAT_SCIENTIST_THEOLOGY',
-    'Amount',
-    1
-),
-(
-    'MODIFIER_PATCHERESU_MAGITEK_ACADEMY_GREAT_SCIENTIST_ASTROLOGY',
-    'Amount',
-    1
 );
 
 -------------------------------------
@@ -619,22 +527,7 @@ VALUES (
 ),
 (
     'MODIFIER_PATCHERESU_MAGITEK_ACADEMY_UNIVERSITY_SCIENCE',
-    'Sample',
-    'LOC_PATCHERESU_MAGITEK_ACADEMY_UNIVERSITY_SCIENCE'
-),
-(
-    'MODIFIER_PATCHERESU_MAGITEK_ACADEMY_BUILDING_CONSTRUCTION',
-    'Preview',
-    'LOC_PATCHERESU_MAGITEK_ACADEMY_BUILDING_CONSTRUCTION'
-),
-(
-    'MODIFIER_PATCHERESU_MAGITEK_ACADEMY_GREAT_SCIENTIST_THEOLOGY',
     'Summary',
-    'LOC_PATCHERESU_MAGITEK_ACADEMY_GREAT_SCIENTIST_THEOLOGY'
-),
-(
-    'MODIFIER_PATCHERESU_MAGITEK_ACADEMY_GREAT_SCIENTIST_ASTROLOGY',
-    'Sample',
-    'LOC_PATCHERESU_MAGITEK_ACADEMY_GREAT_SCIENTIST_ASTROLOGY'
+    'LOC_PATCHERESU_MAGITEK_ACADEMY_UNIVERSITY_SCIENCE'
 );
 -----------------------------------------------

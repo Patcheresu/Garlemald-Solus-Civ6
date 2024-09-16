@@ -15,14 +15,9 @@ VALUES ('TRAIT_CIVILIZATION_PATCHERESU_GUNSHIP', 'KIND_TRAIT'),
 -----------------------------------------------
 -- Tags
 -----------------------------------------------	
-
 -----------------------------------------------
 -- TypeTags
 -----------------------------------------------		
-
-INSERT INTO Typetags
-(Type, Tag)
-VALUES ('UNIT_PATCHERESU_GUNSHIP', 'CLASS_PATCHERESU_GUNSHIP');
 
 INSERT INTO Typetags (Type, Tag)
 SELECT
