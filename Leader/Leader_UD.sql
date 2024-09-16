@@ -330,8 +330,6 @@ INSERT INTO Districtreplaces
 VALUES ('DISTRICT_MAGITEK_ACADEMY', 'DISTRICT_CAMPUS');
 -----------------------------------------------
 -- Modifiers
-
--- In this section, we apply the Ability we defined earlier via the use of another Modifier. In this case, our ModifierId is defined and it is defined with the ModifierType that allows us to grant an ability. We set it as Permanent, as we want this application of the Ability to happen once (at the very start of the game when our custom leader is in-play).
 -----------------------------------------------
 
 INSERT INTO Modifiers
@@ -351,10 +349,6 @@ VALUES (
 
 -----------------------------------------------
 -- TraitModifiers
-
--- This section applies the Modifier (defined directly above), that grants our custom civilization's units an ability. It's tied to the TraitType, which in turn belongs to our custom LeaderType.
-
--- Without this, there's no mechanism for us to apply the UnitAbilityType to anything - so this is required to get the ability to the units we specified earlier.
 -----------------------------------------------
 
 /*INSERT INTO Districtmodifiers
@@ -378,18 +372,6 @@ VALUES
 
 -----------------------------------------------
 -- ModifierArguments
-
--- This final section stitches the last pieces together. It instructs the game which AbilityType to grant as part of the TRAIT_GRANT_SETTLERS_BUILDERS_ALTITUDE_TRAINING Modifier.
-
--- In our case, this is the new ability we defined earlier.
-
--- So, as a brief recap:
-
--- The LeaderType receives a TraitType
--- The TraitType has a Modifier attached to it, which does 'something'
--- That 'something' is the granting of our custom unit ability
--- The unit ability is restricted only to the custom unit class we created - which contains only Builders and Settlers
--- The applied unit ability has a (different) Modifier attached to it, which changes the way those units (individually) behave
 -----------------------------------------------
 
 INSERT INTO Modifierarguments

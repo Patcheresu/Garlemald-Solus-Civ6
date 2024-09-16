@@ -39,7 +39,7 @@ VALUES
 (
     'en_US',
     'LOC_DISTRICT_SOLUS_MAGITEK_ACADEMY_DESCRIPTION',
-    'A district unique to Solus zos Galvus for scientific endeavors. Replaces the Campus district. Provides all adjacency bonuses a Holy Site would normally provide in addition to the regular Campus adjacencies, as well as bonus Science and Great Scientist points with Astrology and Theology, but has increased maintenance, plunder, and buildings inside take longer to produce.'
+    'A district unique to Solus zos Galvus for scientific endeavors. Replaces the Campus district. Provides all adjacency bonuses a Holy Site would normally provide in [ICON_Science] Science form in addition to the regular Campus adjacencies, as well as bonus Science with Astrology and Theology, but has increased maintenance, plunder, and is far more expensive to produce.'
 ),
 
 -----------------------------------------------
@@ -59,12 +59,12 @@ VALUES
 (
     'en_US',
     'LOC_DISTRICT_MAGITEK_ACADEMY_MOUNTAINS_SCIENCE1',
-    '+{1_num} [ICON_Science] Science from the adjacent Mountain {1_Num : plural 1?tile; other?tiles;}. .'
+    '+{1_num} [ICON_Science] Science from the adjacent Mountain {1_Num : plural 1?tile; other?tiles;}.'
 ),
 (
     'en_US',
     'LOC_DISTRICT_MAGITEK_ACADEMY_MOUNTAINS_SCIENCE2',
-    '+{1_num} [ICON_Science] Science from the adjacent Mountain {1_Num : plural 1?tile; other?tiles;}. .'
+    '+{1_num} [ICON_Science] Science from the adjacent Mountain {1_Num : plural 1?tile; other?tiles;}.'
 ),
 (
     'en_US',
