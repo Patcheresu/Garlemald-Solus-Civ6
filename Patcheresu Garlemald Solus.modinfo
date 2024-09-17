@@ -3,7 +3,7 @@
   <Properties>
     <Name>Patcheresu Garlemald Solus</Name>
     <Description>Garlemald, the empire that could conquer a world, formed by a republic of hardy and embittered people pushed from their ancestral homes to the wastes where they survived off burning the 'lifeblood' of the planet. Some day, they may turn this liquid gold into a force that can show the world their power.</Description>
-    <Created>1726494034</Created>
+    <Created>1726616791</Created>
     <Teaser>Adds Garlemald, led by Solus zos Galvus.</Teaser>
     <Authors>Patcheresu</Authors>
     <SpecialThanks>maconnolly, slothoth, JNR, SQUARE ENIX</SpecialThanks>
@@ -67,6 +67,12 @@
     <UpdateArt id="NewAction">
       <File>Patcheresu Garlemald Solus.dep</File>
     </UpdateArt>
+    <UpdateAudio id="NewAction">
+      <File>Platforms/Windows/Audio/SoundbanksInfo.xml</File>
+      <File>Platforms/Windows/Audio/PluginInfo.xml</File>
+      <File>Platforms/Windows/Audio/Garlemald_Music_Bank.bnk</File>
+      <File>Platforms/Windows/Audio/Garlemald Sounds.ini</File>
+    </UpdateAudio>
   </InGameActions>
   <Files>
     <File>ArtDefs/Civilizations.artdef</File>
@@ -95,6 +101,22 @@
     <File>Patcheresu Garlemald Solus.dep</File>
     <File>Platforms/MacOS/BLPs/LeaderFallbacks.blp</File>
     <File>Platforms/MacOS/BLPs/UI/Icons.blp</File>
+    <File>Platforms/Windows/Audio/1029348621.wem</File>
+    <File>Platforms/Windows/Audio/183674296.wem</File>
+    <File>Platforms/Windows/Audio/323296865.wem</File>
+    <File>Platforms/Windows/Audio/323419450.wem</File>
+    <File>Platforms/Windows/Audio/728788940.wem</File>
+    <File>Platforms/Windows/Audio/744232747.wem</File>
+    <File>Platforms/Windows/Audio/802321746.wem</File>
+    <File>Platforms/Windows/Audio/803505004.wem</File>
+    <File>Platforms/Windows/Audio/898497310.wem</File>
+    <File>Platforms/Windows/Audio/936693310.wem</File>
+    <File>Platforms/Windows/Audio/Garlemald Sounds.ini</File>
+    <File>Platforms/Windows/Audio/Garlemald_Music_Bank.bnk</File>
+    <File>Platforms/Windows/Audio/Garlemald_Music_Bank.txt</File>
+    <File>Platforms/Windows/Audio/Garlemald_Music_Bank.xml</File>
+    <File>Platforms/Windows/Audio/PluginInfo.xml</File>
+    <File>Platforms/Windows/Audio/SoundbanksInfo.xml</File>
     <File>Platforms/Windows/BLPs/LeaderFallbacks.blp</File>
     <File>Platforms/Windows/BLPs/UI/Icons.blp</File>
   </Files>

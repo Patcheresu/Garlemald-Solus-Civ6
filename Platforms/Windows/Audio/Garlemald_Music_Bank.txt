@@ -1,0 +1,21 @@
+Event	ID	Name			Wwise Object Path	Notes
+	283625908	Play_Leader_Music_PATCHERESU_GARLEMALD			\Default Work Unit\Music\Play_Leader_Music_PATCHERESU_GARLEMALD	
+	534883682	Stop_Leader_Music_PATCHERESU_GARLEMALD			\Default Work Unit\Music\Stop_Leader_Music_PATCHERESU_GARLEMALD	
+	916298206	Play_Music_PATCHERESU_GARLEMALD			\Default Work Unit\Music\Play_Music_PATCHERESU_GARLEMALD	
+	2394780904	Stop_Music_PATCHERESU_GARLEMALD			\Default Work Unit\Music\Stop_Music_PATCHERESU_GARLEMALD	
+	3330256944	Pause_Music_PATCHERESU_GARLEMALD			\Default Work Unit\Music\Pause_Music_PATCHERESU_GARLEMALD	
+	3613222199	Resume_Music_PATCHERESU_GARLEMALD			\Default Work Unit\Music\Resume_Music_PATCHERESU_GARLEMALD	
+	3879390006	Start_Music_PATCHERESU_GARLEMALD			\Default Work Unit\Music\Start_Music_PATCHERESU_GARLEMALD	
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	183674296	Garlemald_Ambient04	C:\Users\Patcheresu\Documents\WWise Projects\Garlemald SoundsFAILURE\.cache\Windows\SFX\GARLEMALD_MEDIEVAL_AMBIENT_4B8CC0C5.wem	183674296.wem	\Interactive Music Hierarchy\Garlemald_BGM\Garlemald_Music\Garlemald_Industrial_Era\Garlemald_Ambient04\Garlemald_Ambient04	
+	323296865	Garlemald_Leader_Medieval_Era	C:\Users\Patcheresu\Documents\WWise Projects\Garlemald SoundsFAILURE\.cache\Windows\SFX\GARLEMALD_MEDIEVAL_4B8CC0C5.wem	323296865.wem	\Interactive Music Hierarchy\Garlemald_BGM\Garlemald_Leader_Music\Garlemald_Leader_Medieval_Era\Garlemald_Leader_Medieval_Era\Garlemald_Leader_Medieval_Era	
+	323419450	Garlemald_Ambient02	C:\Users\Patcheresu\Documents\WWise Projects\Garlemald SoundsFAILURE\.cache\Windows\SFX\GARLEMALD_ANCIMEDI_AMBIENT_4B8CC0C5.wem	323419450.wem	\Interactive Music Hierarchy\Garlemald_BGM\Garlemald_Music\Garlemald_Ancient_Era\Garlemald_Ambient02\Garlemald_Ambient02	
+	728788940	Garlemald_Ambient05	C:\Users\Patcheresu\Documents\WWise Projects\Garlemald SoundsFAILURE\.cache\Windows\SFX\GARLEMALD_INDUSTRIAL_AMBIENT_4B8CC0C5.wem	728788940.wem	\Interactive Music Hierarchy\Garlemald_BGM\Garlemald_Music\Garlemald_Industrial_Era\Garlemald_Ambient05\Garlemald_Ambient05	
+	744232747	Garlemald_Leader_Ancient_Era	C:\Users\Patcheresu\Documents\WWise Projects\Garlemald SoundsFAILURE\.cache\Windows\SFX\GARLEMALD_ANCIENT_4B8CC0C5.wem	744232747.wem	\Interactive Music Hierarchy\Garlemald_BGM\Garlemald_Leader_Music\Garlemald_Leader_Ancient_Era\Garlemald_Leader_Ancient_Era\Garlemald_Leader_Ancient_Era	
+	802321746	Garlemald_Ambient01	C:\Users\Patcheresu\Documents\WWise Projects\Garlemald SoundsFAILURE\.cache\Windows\SFX\GARLEMALD_ANCIENT_AMBIENT_4B8CC0C5.wem	802321746.wem	\Interactive Music Hierarchy\Garlemald_BGM\Garlemald_Music\Garlemald_Ancient_Era\Garlemald_Ambient01\Garlemald_Ambient01	
+	803505004	Garlemald_Ambient03	C:\Users\Patcheresu\Documents\WWise Projects\Garlemald SoundsFAILURE\.cache\Windows\SFX\GARLEMALD_MEDIINDU_AMBIENT_4B8CC0C5.wem	803505004.wem	\Interactive Music Hierarchy\Garlemald_BGM\Garlemald_Music\Garlemald_Industrial_Era\Garlemald_Ambient03\Garlemald_Ambient03	
+	898497310	Garlemald_Leader_Atomic_Era	C:\Users\Patcheresu\Documents\WWise Projects\Garlemald SoundsFAILURE\.cache\Windows\SFX\GARLEMALD_ATOMIC_4B8CC0C5.wem	898497310.wem	\Interactive Music Hierarchy\Garlemald_BGM\Garlemald_Leader_Music\Garlemald_Leader_Atomic_Era\Garlemald_Leader_Atomic_Era\Garlemald_Leader_Atomic_Era	
+	936693310	Garlemald_Ambient06	C:\Users\Patcheresu\Documents\WWise Projects\Garlemald SoundsFAILURE\.cache\Windows\SFX\GARLEMALD_ATOMIC_AMBIENT_4B8CC0C5.wem	936693310.wem	\Interactive Music Hierarchy\Garlemald_BGM\Garlemald_Music\Garlemald_Atomic_Era\Garlemald_Ambient06\Garlemald_Ambient06	
+	1029348621	Garlemald_Leader_Industrial_Era	C:\Users\Patcheresu\Documents\WWise Projects\Garlemald SoundsFAILURE\.cache\Windows\SFX\GARLEMALD_INDUSTRIAL_4B8CC0C5.wem	1029348621.wem	\Interactive Music Hierarchy\Garlemald_BGM\Garlemald_Leader_Music\Garlemald_Leader_Industrial_Era\Garlemald_Leader_Industrial_Era\Garlemald_Leader_Industrial_Era	
+

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="10" SoundbankVersion="113">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Patcheresu\Documents\WWise Projects\Garlemald SoundsFAILURE\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Patcheresu\Documents\WWise Projects\Garlemald SoundsFAILURE\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Patcheresu\Documents\WWise Projects\Garlemald SoundsFAILURE\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Patcheresu\Documents\WWise Projects\Garlemald SoundsFAILURE\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles>
+		<File Id="183674296" Language="SFX">
+			<ShortName>GARLEMALD_MEDIEVAL_AMBIENT.wav</ShortName>
+			<Path>SFX\GARLEMALD_MEDIEVAL_AMBIENT_4B8CC0C5.wem</Path>
+		</File>
+		<File Id="323296865" Language="SFX">
+			<ShortName>GARLEMALD_MEDIEVAL.wav</ShortName>
+			<Path>SFX\GARLEMALD_MEDIEVAL_4B8CC0C5.wem</Path>
+		</File>
+		<File Id="323419450" Language="SFX">
+			<ShortName>GARLEMALD_ANCIMEDI_AMBIENT.wav</ShortName>
+			<Path>SFX\GARLEMALD_ANCIMEDI_AMBIENT_4B8CC0C5.wem</Path>
+		</File>
+		<File Id="728788940" Language="SFX">
+			<ShortName>GARLEMALD_INDUSTRIAL_AMBIENT.wav</ShortName>
+			<Path>SFX\GARLEMALD_INDUSTRIAL_AMBIENT_4B8CC0C5.wem</Path>
+		</File>
+		<File Id="744232747" Language="SFX">
+			<ShortName>GARLEMALD_ANCIENT.wav</ShortName>
+			<Path>SFX\GARLEMALD_ANCIENT_4B8CC0C5.wem</Path>
+		</File>
+		<File Id="802321746" Language="SFX">
+			<ShortName>GARLEMALD_ANCIENT_AMBIENT.wav</ShortName>
+			<Path>SFX\GARLEMALD_ANCIENT_AMBIENT_4B8CC0C5.wem</Path>
+		</File>
+		<File Id="803505004" Language="SFX">
+			<ShortName>GARLEMALD_MEDIINDU_AMBIENT.wav</ShortName>
+			<Path>SFX\GARLEMALD_MEDIINDU_AMBIENT_4B8CC0C5.wem</Path>
+		</File>
+		<File Id="898497310" Language="SFX">
+			<ShortName>GARLEMALD_ATOMIC.wav</ShortName>
+			<Path>SFX\GARLEMALD_ATOMIC_4B8CC0C5.wem</Path>
+		</File>
+		<File Id="936693310" Language="SFX">
+			<ShortName>GARLEMALD_ATOMIC_AMBIENT.wav</ShortName>
+			<Path>SFX\GARLEMALD_ATOMIC_AMBIENT_4B8CC0C5.wem</Path>
+		</File>
+		<File Id="1029348621" Language="SFX">
+			<ShortName>GARLEMALD_INDUSTRIAL.wav</ShortName>
+			<Path>SFX\GARLEMALD_INDUSTRIAL_4B8CC0C5.wem</Path>
+		</File>
+	</StreamedFiles>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2775214615" Language="SFX">
+			<ShortName>Garlemald_Music_Bank</ShortName>
+			<Path>Garlemald_Music_Bank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3330256944" Name="Pause_Music_PATCHERESU_GARLEMALD"/>
+				<Event Id="283625908" Name="Play_Leader_Music_PATCHERESU_GARLEMALD"/>
+				<Event Id="916298206" Name="Play_Music_PATCHERESU_GARLEMALD"/>
+				<Event Id="3613222199" Name="Resume_Music_PATCHERESU_GARLEMALD"/>
+				<Event Id="3879390006" Name="Start_Music_PATCHERESU_GARLEMALD"/>
+				<Event Id="534883682" Name="Stop_Leader_Music_PATCHERESU_GARLEMALD"/>
+				<Event Id="2394780904" Name="Stop_Music_PATCHERESU_GARLEMALD"/>
+			</IncludedEvents>
+			<ReferencedStreamedFiles>
+				<File Id="183674296"/>
+				<File Id="323296865"/>
+				<File Id="323419450"/>
+				<File Id="728788940"/>
+				<File Id="744232747"/>
+				<File Id="802321746"/>
+				<File Id="803505004"/>
+				<File Id="898497310"/>
+				<File Id="936693310"/>
+				<File Id="1029348621"/>
+			</ReferencedStreamedFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

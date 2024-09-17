@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="10" SoundbankVersion="113">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Patcheresu\Documents\WWise Projects\Garlemald Sounds\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Patcheresu\Documents\WWise Projects\Garlemald Sounds\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Patcheresu\Documents\WWise Projects\Garlemald Sounds\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Patcheresu\Documents\WWise Projects\Garlemald Sounds\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<SoundBanks>
+		<SoundBank Id="2775214615" Language="SFX">
+			<ShortName>Garlemald_Music_Bank</ShortName>
+			<Path>Garlemald_Music_Bank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3330256944" Name="Pause_Music_PATCHERESU_GARLEMALD"/>
+				<Event Id="283625908" Name="Play_Leader_Music_PATCHERESU_GARLEMALD"/>
+				<Event Id="916298206" Name="Play_Music_PATCHERESU_GARLEMALD"/>
+				<Event Id="3613222199" Name="Resume_Music_PATCHERESU_GARLEMALD"/>
+				<Event Id="3879390006" Name="Start_Music_PATCHERESU_GARLEMALD"/>
+				<Event Id="534883682" Name="Stop_Leader_Music_PATCHERESU_GARLEMALD"/>
+				<Event Id="2394780904" Name="Stop_Music_PATCHERESU_GARLEMALD"/>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
